@@ -3,7 +3,10 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import IconButton from "@material-ui/core/IconButton";
 import GridContainer from "../../../components/Grid/GridContainer.js";
 import GridItem from "../../../components/Grid/GridItem.js";
 import Button from "../../../components/CustomButtons/Button.js";
@@ -49,27 +52,21 @@ export default function TeamSection() {
               </h4>
              
               <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="default"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="default"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="default"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
+               <IconButton aria-label="LinkedIn">
+          <a rel="stylesheet" href="https://www.linkedin.com/in/nouha-mbarek-a01b561b0/" >
+            <LinkedInIcon /></a>
+            
+          </IconButton>
+                <IconButton aria-label="Instagram">
+              <a rel="stylesheet" href="https://www.instagram.com/nouhatou9545/?hl=fr" >
+              <InstagramIcon/>
+              </a>
+              </IconButton>
+              <IconButton aria-label="Facebook">
+           <a rel="stylesheet" href="https://www.facebook.com/Nouha.MB18" >
+              <FacebookIcon/>
+              </a>
+          </IconButton>
               </CardFooter>
            </Card>
           </GridItem>

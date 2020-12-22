@@ -29,7 +29,7 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Chat Apps"
+              title="Chat Apps : ChatKit"
                 description="If you have a new chat App idea and you don't know how to bring it to life, we are here to build it for you."
               icon={Chat}
               iconColor="info"

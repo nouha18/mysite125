@@ -1,11 +1,15 @@
 /*eslint-disable*/
 import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload, Instagram } from "@material-ui/icons";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -24,6 +28,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+     
       <ListItem className={classes.listItem}>
         <Button
           href="https://github.com/nouha18"
@@ -34,29 +39,19 @@ export default function HeaderLinks(props) {
           <CloudDownload className={classes.icons} /> Projects
         </Button>
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
- 
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
+        <Tooltip title="LinkedIn" 
+             placement={window.innerWidth > 959 ? "top" : "left"}
+             classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-linkedin"} />
-          </Button>
+          <IconButton aria-label="LinkedIn">
+          <a rel="stylesheet" href="https://www.linkedin.com/in/nouha-mbarek-a01b561b0/" ><LinkedInIcon /></a>
+            
+          </IconButton>
         </Tooltip>
       </ListItem>
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
@@ -64,16 +59,14 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
+           <IconButton aria-label="Facebook">
+           <a rel="stylesheet" href="https://www.facebook.com/Nouha.MB18" >
+              <FacebookIcon/>
+              </a>
+          </IconButton>
         </Tooltip>
       </ListItem>
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
@@ -81,15 +74,28 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
-        </Tooltip>
+              <IconButton aria-label="Instagram">
+              <a rel="stylesheet" href="https://www.instagram.com/nouhatou9545/?hl=fr" >
+              <InstagramIcon/>
+              </a>
+              </IconButton>
+               </Tooltip>
+              </ListItem>
+   
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-tooltip"
+          title="Follow us on instagram"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}>
+        
+              <IconButton color="default" aria-label="Instagram">
+              <a rel="stylesheet" href="https://twitter.com/pink8flower" >
+              <TwitterIcon/>
+              </a>
+              </IconButton>
+        
+         </Tooltip>
       </ListItem>
     </List>
   );
