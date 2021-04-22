@@ -17,7 +17,6 @@ const workStyle = {
     textAlign: "center",
     marginRight:'25px',
     marginLeft:'25px',
-    
   },
   textCenter: {
     textAlign: "center"

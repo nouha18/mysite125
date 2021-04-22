@@ -46,7 +46,137 @@ const container = {
     maxWidth: "1140px"
   }
 };
-
+const cardcontainer = {
+ 
+  "@media (min-width: 576px)": {
+ display:'flex',
+ flexDdirection:"column",
+ width:'90%',
+  },
+  "@media (min-width: 768px)": {
+    display:'flex',
+    flexDdirection:"column",
+    width:'90%',
+  },
+  "@media (min-width: 992px)": {
+    display:'flex',
+    flexDdirection:"row",
+    width:'100%',
+  },
+  "@media (min-width: 1200px)": {
+    display:'flex',
+    flexDdirection:"row",
+    width:'100%',
+  }
+};
+const cards = {
+ 
+  "@media (min-width: 576px)": {
+ display:'flex',
+ flexDdirection:"column",
+ width:'70%',
+  },
+  "@media (min-width: 768px)": {
+    display:'flex',
+    flexDdirection:"column",
+    width:'70%',
+  },
+  "@media (min-width: 992px)": {
+    display:'flex',
+    width:'25rem',
+  },
+  "@media (min-width: 1200px)": {
+    display:'flex',
+    width:'25rem',
+  }
+};
+const documentation = {
+ 
+  "@media (min-width: 576px)": {
+ display:'flex',
+ flexDdirection:"column",
+ width:'70%',
+  },
+  "@media (min-width: 768px)": {
+    display:'flex',
+    flexDdirection:"column",
+    alignContent:'center', 
+    
+    width:'80%',
+  },
+  "@media (min-width: 992px)": {
+    display:'flex',
+    width:'90%',
+  },
+  "@media (min-width: 1200px)": {
+    display:'flex',
+    width:'90%',
+  }
+};
+const images = {
+ 
+  "@media (min-width: 360px)": {
+ width:'360px',
+ marginTop:'-55px'
+ 
+  },
+  "@media (min-width: 768px)": {
+    width:'768px',
+    marginTop:'-55px'
+  },
+  "@media (min-width: 992px)": {
+    marginTop:'-70px',
+    width:'90%',
+  },
+  "@media (min-width: 1024px)": {
+   width:'1024px',
+   marginTop:'-70px',
+  },
+  "@media (min-width: 1200px)": {
+    width:'1500px',
+    height:'25rem',
+    marginTop:'-70px',
+   }
+};
+const figcaptions={
+  "@media (min-width: 360px)": {
+    display:'flex',
+    flexDirection:'column',
+    width:'100%',
+    marginTop:'-85px',
+    marginLeft:'0%',
+    fontSize:2+'em',
+     },
+     "@media (min-width: 768px)": {
+       width:'100%',
+       display:'block',
+       marginTop:'-108px',
+       marginLeft:'5%',
+       fontSize:2+'em',
+     },
+     "@media (min-width: 992px)": {
+      display:'flex',
+      flexDirection:'column',
+       width:'90%',
+       fontSize:3+'em',
+       marginTop:'-96px',
+       marginLeft:'10%',
+     },
+     "@media (min-width: 1024px)": {
+      display:'flex',
+      flexDirection:'column',
+      marginTop:'-122px',
+      marginLeft:'5%',
+      fontSize:3+'em',
+     },
+     "@media (min-width: 1200px)": {
+      display:'flex',
+      flexDirection:'column',
+      marginTop:'-180px',
+      marginLeft:'5%',
+      fontSize:3+'em',
+     }
+};
 const boxShadow = {
   boxShadow:
     "0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
@@ -187,6 +317,7 @@ export {
   containerFluid,
   boxShadow,
   card,
+  cardcontainer,
   defaultFont,
   primaryColor,
   warningColor,
@@ -195,6 +326,7 @@ export {
   infoColor,
   roseColor,
   grayColor,
+  figcaptions,
   primaryBoxShadow,
   infoBoxShadow,
   successBoxShadow,
@@ -209,8 +341,11 @@ export {
   roseCardHeader,
   cardActions,
   cardHeader,
+  documentation,
+  images,
   defaultBoxShadow,
   title,
+  cards,
   cardTitle,
   cardLink,
   cardSubtitle

@@ -6,6 +6,25 @@ const landingPageStyle = {
     color: "#FFFFFF",
     ...container
   },
+  containerresp: {
+    zIndex: "12",
+    display:"inline",
+    flexDirection:"row",
+    paddingTop:'75px',
+    width:'250px',
+      marginTop:"67px",
+    color: "#FFFFFF",
+    ...container
+  },
+  titleresp: {
+    display: "flex",
+    flexDirection: "row",
+    position: "relative",
+    marginTop: "50px",
+    minHeight: "32px",
+    color: "#FFFFFF",
+    textDecoration: "none"
+  },
   title: {
     ...title,
     display: "inline-block",
